@@ -45,6 +45,6 @@ tasks.withType<BootBuildImage> {
 
 tasks.withType<Jar> {
     manifest {
-        attributes("Main-Class" to "dev.panelinha.games.lobby.LobbyApplication")
+        attributes("Main-Class" to "dev.panelinha.games.lobby.LobbyApplicationKt")
     }
 }

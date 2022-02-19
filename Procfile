@@ -1,1 +1,1 @@
-web: java -jar build/lib/lobby-0.0.1-SNAPSHOT.jar --server.port=$PORT
+web: java -jar build/libs/lobby-0.0.1-SNAPSHOT.jar --server.port=$PORT

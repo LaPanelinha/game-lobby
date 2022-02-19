@@ -7,11 +7,16 @@ plugins {
     kotlin("jvm") version "1.6.10"
     kotlin("plugin.spring") version "1.6.10"
     id("org.springframework.experimental.aot") version "0.11.2"
+    id("application")
 }
 
 group = "dev.panelinha.games"
 version = "0.0.1-SNAPSHOT"
 java.sourceCompatibility = JavaVersion.VERSION_11
+
+application {
+    mainClass.set("dev.panelinha.games.lobby.LobbyApplicationKt")
+}
 
 repositories {
     maven { url = uri("https://repo.spring.io/release") }

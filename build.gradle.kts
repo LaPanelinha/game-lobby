@@ -7,7 +7,6 @@ plugins {
     kotlin("jvm") version "1.6.10"
     kotlin("plugin.spring") version "1.6.10"
     id("org.springframework.experimental.aot") version "0.11.2"
-    id("application")
 }
 
 group = "dev.panelinha.games"
@@ -46,10 +45,4 @@ tasks.withType<Test> {
 tasks.withType<BootBuildImage> {
     builder = "paketobuildpacks/builder:tiny"
     environment = mapOf("BP_NATIVE_IMAGE" to "true")
-}
-
-tasks.withType<Jar> {
-    manifest {
-        attributes("Main-Class" to "dev.panelinha.games.lobby.LobbyApplicationKt")
-    }
 }

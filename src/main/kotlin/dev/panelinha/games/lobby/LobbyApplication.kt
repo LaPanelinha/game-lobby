@@ -7,5 +7,5 @@ import org.springframework.boot.runApplication
 class LobbyApplication
 
 fun main(args: Array<String>) {
-	runApplication<LobbyApplication>(*args)
+    runApplication<LobbyApplication>(*args)
 }

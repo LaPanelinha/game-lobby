@@ -13,10 +13,6 @@ group = "dev.panelinha.games"
 version = "0.0.1-SNAPSHOT"
 java.sourceCompatibility = JavaVersion.VERSION_11
 
-application {
-    mainClass.set("dev.panelinha.games.lobby.LobbyApplicationKt")
-}
-
 repositories {
     maven { url = uri("https://repo.spring.io/release") }
     mavenCentral()
